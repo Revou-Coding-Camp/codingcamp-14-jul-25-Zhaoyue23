@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveMyCat</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="flex justify-between items-center p-4 bg-[#EB945B] text-white"
+    >
+      <div
+        class="h-16 w-16 bg-[url(https://picsum.photos/200)] rounded-full bg-center bg-cover"
+      ></div>
+      <nav class="flex">
+        <a
+          href="#home-page"
+          class="border rounded-[4px] bg-[#5C4A3E] py-[5px] px-[10px] hover:underline hover:bg-[#7A6B5A]"
+          href="#home-page"
+          >Home</a
+        >
+        <a
+          href="#our-profile"
+          class="border rounded-[4px] bg-[#5C4A3E] py-[5px] px-[10px] hover:underline hover:bg-[#7A6B5A]"
+          href="#our-profile"
+          >Our Profile</a
+        >
+        <a
+          href="#message-us"
+          class="border rounded-[4px] bg-[#5C4A3E] py-[5px] px-[10px] hover:underline hover:bg-[#7A6B5A]"
+          href="#message-us"
+          >Message Us</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section id="home-page">
+        <header>
+          <h1 class="text-center text-2xl font-bold my-6">
+            Welcome <span id="welcome-user">[User]</span>, To Our Website
+          </h1>
+        </header>
+        <div>
+          <p class="text-center text-lg mb-8 italic">
+            Kucing itu seperti puisi hidup yang berjalan dengan empat kaki. Dia
+            bukan sekadar kucing – dia adalah keluarga, boss, dan penghancur
+            tirai sekaligus.
+          </p>
+          <div
+            class="h-[500px] bg-[url(Resource/Flow2024.jpg)] bg-cover bg-center"
+          ></div>
+          <article class="text-center my-4">
+            <p>
+              Kucing adalah teman setia yang selalu siap menemani kita dalam
+              suka dan duka. Mereka memiliki cara unik untuk membuat kita
+              tersenyum, bahkan di hari-hari yang palingsulit sekalipun
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="our-profile" class="bg-[#EB945B] py-2 text-white">
+        <header>
+          <h2 class="text-center text-xl font-semibold my-6">Our Profile</h2>
+        </header>
+        <div class="flex items-start gap-8 max-w-4xl mx-auto my-8">
+          <div
+            class="h-40 w-40 bg-[url('Resource/Cemong.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+          ></div>
+          <p class="text-justify text-lg mx-8">
+            Hai, kenalin ini si Cemong! Kucing oren dengan gaya hidup santai.
+            Namanya “Cemong” karena dulu doyan nyemplung ke tempat-tempat yang
+            kotor, tapi sekarang dia tampil bersih dan bermartabat, mungkin
+            terdengar seperti “dulu aku liar, sekarang aku elegan.” Walaupun
+            kadang suka jahil, dia juga jago ngasih pelukan diem-diem pas lagi
+            butuh perhatian. Intinya, Cemong bukan sekadar kucing, dia adalah
+            kombinasi antara boneka hidup, alarm subuh, dan ahli menyabotase
+            keyboard laptop.
+          </p>
+        </div>
+
+        <div
+          class="flex items-start gap-8 max-w-4xl mx-auto flex-row-reverse my-8"
+        >
+          <div
+            class="h-40 w-40 bg-[url('Resource/Odet.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+          ></div>
+          <p class="text-justify text-lg mx-8">
+            Kenalin, ini Odet! Jangan tertipu sama namanya yang kedengeran
+            feminim, karena dia jantan sejati dengan skill bertarung level boss
+            terakhir. Gayanya santai, duduk seperti model iklan makanan kucing,
+            tapi di balik tatapan tajamnya tersimpan sejarah pertempuran epik
+            melawan kucing tetangga. Bulu putih-hitamnya rapi, lengkap dengan
+            lonceng merah yang bunyinya bukan buat gaya, tapi buat memberi tahu
+            lawannya “Awas, Odet datang!” Kalau dia lagi nongkrong di jendela,
+            suasananya langsung kayak film action slow-motion yang penuh wibawa
+            dan aura pahlawan.
+          </p>
+        </div>
+
+        <div class="flex items-start gap-8 max-w-4xl mx-auto my-8">
+          <div
+            class="h-40 w-40 bg-[url(Resource/Kuro.jpeg)] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+          ></div>
+          <p class="text-justify text-lg mx-8">
+            Kenalin, ini Kuro! makhluk kegelapan yang super lembut. Jangan takut
+            sama penampilannya yang kayak bayangan di tengah malam, soalnya di
+            balik bulu hitam legamnya itu tersembunyi hati selembut kapas. Kuro
+            itu ninja sejati yang bisa muncul tiba-tiba di bawah meja, di
+            belakang pintu, atau duduk diam di pojokan seperti sedang mengamati
+            dunia dalam diam. Tapi sekalinya dielus, langsung berubah jadi
+            boneka hidup paling manja se-rumah.
+          </p>
+        </div>
+      </section>
+
+      <section id="message-us">
+        <header>
+          <h2 class="text-center text-xl font-semibold my-6">Message Us</h2>
+        </header>
+        <form>
+          <div class="flex flex-col items-center">
+            <label for="name-input" class="mb-4">Name :</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="border rounded p-2 mb-4 w-1/2"
+              id="name-input"
+              name="name"
+            />
+            <label for="email-input" class="mb-4">Email :</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="border rounded p-2 mb-4 w-1/2"
+              id="email-input"
+              name="email"
+            />
+            <label for="message-input" class="mb-4">Message :</label>
+            <textarea
+              placeholder="Enter your message"
+              class="border rounded p-2 mb-4 w-1/2"
+              id="message-input"
+              name="message"
+              rows="4"
+            ></textarea>
+
+            <button
+              onclick="ValidateForm();"
+              type="button"
+              class="bg-[#5C4A3E] text-white border rounded p-2 mb-4 w-1/2 hover:bg-[#7A6B5A]"
+            >
+              Submit
+            </button>
+
+            <div id="message-output" class="text-center mt-4"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="text-center p-4 bg-[#EB945B] text-white">
+        <p>&copy; 2025 LoveMyCat. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="JS\script.js"></script>
+  </body>
+</html>
 
