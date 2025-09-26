@@ -43,7 +43,7 @@
           </h1>
         </header>
         <div>
-          <p class="text-center text-lg mb-8 italic">
+          <p class="text-center text-lg mb-8 italic" style="font-family: 'Times New Roman', Times, serif;">
             Kucing itu seperti puisi hidup yang berjalan dengan empat kaki. Dia
             bukan sekadar kucing – dia adalah keluarga, boss, dan penghancur
             tirai sekaligus.
@@ -67,9 +67,9 @@
         </header>
         <div class="flex items-start gap-8 max-w-4xl mx-auto my-8">
           <div
-            class="h-40 w-40 bg-[url('Resource/Cemong.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+            class="h-40 w-40 bg-[url('Resource/Cemong.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8 hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-white"
           ></div>
-          <p class="text-justify text-lg mx-8">
+          <p class="text-justify text-lg mx-8" style="font-family: 'Times New Roman', Times, serif;">
             Hai, kenalin ini si Cemong! Kucing oren dengan gaya hidup santai.
             Namanya “Cemong” karena dulu doyan nyemplung ke tempat-tempat yang
             kotor, tapi sekarang dia tampil bersih dan bermartabat, mungkin
@@ -85,9 +85,9 @@
           class="flex items-start gap-8 max-w-4xl mx-auto flex-row-reverse my-8"
         >
           <div
-            class="h-40 w-40 bg-[url('Resource/Odet.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+            class="h-40 w-40 bg-[url('Resource/Odet.jpeg')] flex-shrink-0 bg-cover bg-center rounded-full mx-8 hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-white"
           ></div>
-          <p class="text-justify text-lg mx-8">
+          <p class="text-justify text-lg mx-8" style="font-family: 'Times New Roman', Times, serif;">
             Kenalin, ini Odet! Jangan tertipu sama namanya yang kedengeran
             feminim, karena dia jantan sejati dengan skill bertarung level boss
             terakhir. Gayanya santai, duduk seperti model iklan makanan kucing,
@@ -102,9 +102,9 @@
 
         <div class="flex items-start gap-8 max-w-4xl mx-auto my-8">
           <div
-            class="h-40 w-40 bg-[url(Resource/Kuro.jpeg)] flex-shrink-0 bg-cover bg-center rounded-full mx-8"
+            class="h-40 w-40 bg-[url(Resource/Kuro.jpeg)] flex-shrink-0 bg-cover bg-center rounded-full mx-8 hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-white"
           ></div>
-          <p class="text-justify text-lg mx-8">
+          <p class="text-justify text-lg mx-8" style="font-family: 'Times New Roman', Times, serif;">
             Kenalin, ini Kuro! makhluk kegelapan yang super lembut. Jangan takut
             sama penampilannya yang kayak bayangan di tengah malam, soalnya di
             balik bulu hitam legamnya itu tersembunyi hati selembut kapas. Kuro
@@ -116,32 +116,34 @@
         </div>
       </section>
 
-      <section id="message-us">
+      <section id="message-us" class="grid">
         <header>
           <h2 class="text-center text-xl font-semibold my-6">Message Us</h2>
         </header>
-        <form>
+        <!-- resize this form -->
+        <form class="max-w-md mx-auto mb-8 border p-10 rounded shadow-lg bg-[#EB945B] px-20">
           <div class="flex flex-col items-center">
-            <label for="name-input" class="mb-4">Name :</label>
+            <label for="name-input" class="mb-2 font-medium">Name :</label>
             <input
               type="text"
               placeholder="Enter your name"
-              class="border rounded p-2 mb-4 w-1/2"
+              class="border rounded p-3 mb-4 w-full text-white border rounded bg-[#7A6B5A] focus:outline-none focus:ring-2 focus:ring-blue-300"
               id="name-input"
               name="name"
+              
             />
-            <label for="email-input" class="mb-4">Email :</label>
+            <label for="email-input" class="b-2 font-medium">Email :</label>
             <input
               type="email"
               placeholder="Enter your email"
-              class="border rounded p-2 mb-4 w-1/2"
+              class="border rounded p-3 mb-4 w-full text-white border rounded bg-[#7A6B5A] focus:outline-none focus:ring-2 focus:ring-blue-300"
               id="email-input"
               name="email"
             />
-            <label for="message-input" class="mb-4">Message :</label>
+            <label for="message-input" class="mb-2 font-medium">Message :</label>
             <textarea
               placeholder="Enter your message"
-              class="border rounded p-2 mb-4 w-1/2"
+              class="border rounded p-3 mb-4 w-full text-white border rounded bg-[#7A6B5A] focus:outline-none focus:ring-2 focus:ring-blue-300"
               id="message-input"
               name="message"
               rows="4"
@@ -150,7 +152,7 @@
             <button
               onclick="ValidateForm();"
               type="button"
-              class="bg-[#5C4A3E] text-white border rounded p-2 mb-4 w-1/2 hover:bg-[#7A6B5A]"
+              class="bg-[#5C4A3E] text-white border rounded p-3 mb-4 w-full hover:bg-[#7A6B5A] transition-colors duration-200 font-medium"
             >
               Submit
             </button>
